@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+
+# Configuration files
+.env
+.env.local
+
+# System files
+.DS_Store
+.vscode/
+.idea/
+
+# Maven 
+target/
+*.class
