@@ -1,0 +1,81 @@
+.dashboardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-primary);
+  padding: 20px;
+}
+
+.dashboardPanel {
+  background-color: var(--color-secondary);
+  padding: 60px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  max-width: 600px;
+}
+
+.greeting {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--color-light);
+  margin-bottom: 40px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.userInfo {
+  background-color: var(--color-accent);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  margin-bottom: 30px;
+}
+
+.infoLabel {
+  color: rgba(232, 232, 232, 0.7);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.infoValue {
+  color: var(--color-light);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  padding: 12px 30px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  flex: 1;
+  max-width: 200px;
+}
+
+.button:hover {
+  background-color: #152438;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.logoutButton {
+  background-color: #C0392B;
+}
+
+.logoutButton:hover {
+  background-color: #A93226;
+}

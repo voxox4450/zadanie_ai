@@ -1,0 +1,29 @@
+/* Global Styles */
+:root {
+  --color-primary: #101D2C;
+  --color-secondary: #1A1A1B;
+  --color-accent: #3E4E56;
+  --color-light: #E8E8E8;
+  --color-error: #E74C3C;
+  --color-success: #27AE60;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+}

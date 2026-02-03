@@ -1,0 +1,10 @@
+{
+  "name": "projekt-glowny",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"cd security-agency-backend && mvn spring-boot:run -DskipTests\" \"cd security-agency-frontend && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
