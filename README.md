@@ -124,7 +124,7 @@ npm install
 npm run dev
 ```
 
-Frontend will open at `http://localhost:5173`
+Frontend will open at `http://localhost:3000`
 
 ## Testing the Application
 
