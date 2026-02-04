@@ -119,7 +119,17 @@ cd security-agency-frontend
 npm install
 ```
 
-3. Start development server:
+3. Back to main folder
+```bash
+cd ..
+```
+
+4. Install dependencies:
+```bash
+npm install
+```
+
+5. Start development server:
 ```bash
 npm run dev
 ```
