@@ -90,24 +90,7 @@ java -version
 mvn -version
 ```
 
-2. Navigate to backend directory:
-```bash
-cd security-agency-backend
-```
-
-3. Build with Maven:
-```bash
-mvn clean install
-```
-
-4. Run the application:
-```bash
-mvn spring-boot:run
-```
-
-Backend will run on `http://localhost:8080`
-
-### Frontend Setup
+### Backend + Frontend Setup
 
 1. Navigate to frontend directory:
 ```bash
@@ -134,6 +117,7 @@ npm install
 npm run dev
 ```
 
+Backend will run on `http://localhost:8080`
 Frontend will open at `http://localhost:3000`
 
 ## Testing the Application
