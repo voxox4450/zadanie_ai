@@ -1,13 +1,22 @@
 package com.securityagency.service;
 
-import com.securityagency.model.User;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import java.util.*;
+
+import com.securityagency.model.User;
 
 @Service
 public class UserService {
     private final Map<String, User> users = new HashMap<>();
     private final Map<String, Integer> failedLoginAttempts = new HashMap<>();
+    
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public User registerUser(String firstName, String lastName, String email, String password) throws Exception {
         if (users.containsKey(email)) {
@@ -83,11 +92,11 @@ public class UserService {
     }
 
     private String hashPassword(String password) {
-        // Simple hashing - in production, use BCrypt or similar
-        return Integer.toString(password.hashCode());
+        // BCrypt hashing with automatic salt generation
+        return passwordEncoder.encode(password);
     }
 
     private boolean verifyPassword(String rawPassword, String hashedPassword) {
-        return hashPassword(rawPassword).equals(hashedPassword);
+        return passwordEncoder.matches(rawPassword, hashedPassword);
     }
 }
