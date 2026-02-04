@@ -82,12 +82,14 @@ PUT  /api/reset-password         - Password reset
 
 ## Setup Instructions
 
-### Backend Setup
+### Introduction Setup
 
 1. Ensure Java 21+ and Maven are installed:
 ```bash
 java -version
 mvn -version
+node -v
+npm -v
 ```
 
 ### Backend + Frontend Setup
